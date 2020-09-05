@@ -6,7 +6,7 @@
       </div>
     </div>
     <div class="row">
-      <p class="display-3">Add Form</p>
+      <AddTodo @on-addTodo="addTodo($event)" />
     </div>
     <div class="row">
       <div class="col-12">
@@ -28,9 +28,11 @@
 
 <script>
 import Todo from "./Todo.vue";
+import AddTodo from "./AddTodo.vue";
 export default {
   components: {
     Todo,
+    AddTodo,
   },
   data() {
     return {
