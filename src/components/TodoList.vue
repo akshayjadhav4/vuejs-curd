@@ -16,6 +16,7 @@
             :key="index"
             :todoString="todo.todoString"
             :completed="todo.completed"
+            @on-delete="deleteTodo(todo)"
           />
         </ul>
       </div>
